@@ -22,7 +22,7 @@
  -  The purpose of the WHERE clause in a SELECT statement is to filter rows based on specified conditions. Example:
    ```sql
    SELECT * FROM employees WHERE department_id = 1;
-  ```
+ 
 In this example, the WHERE clause filters rows from the employees table where the department_id column equals 1, returning only employees who belong to the department with ID 1.
 6. **What are the LIMIT and OFFSET clauses used for?**
 - The LIMIT and OFFSET clauses are used in SQL queries to control the number of rows returned and to specify the starting point for retrieving rows, respectively. They are commonly used together for implementing pagination in SQL queries, where a subset of rows is retrieved for display or processing.
@@ -57,16 +57,16 @@ GROUP BY department_id;
 10. **How can you calculate aggregate functions like COUNT, SUM, and AVG in PostgreSQL?**
  -   You can calculate aggregate functions like COUNT, SUM, and AVG in PostgreSQL by using them in conjunction with the SELECT statement and the GROUP BY clause if necessary.
      Example:
-    ```sql
-    -- Count the number of rows in a table
+
+    - Count the number of rows in a table
 SELECT COUNT(*) FROM employees;
 
--- Calculate the total salary of all employees
+ Calculate the total salary of all employees
 SELECT SUM(salary) FROM employees;
 
--- Calculate the average age of employees in each department
+- Calculate the average age of employees in each department
 SELECT department_id, AVG(age) FROM employees GROUP BY department_id;
-```
+
 In these examples:
 
     COUNT(*) counts the total number of rows.
