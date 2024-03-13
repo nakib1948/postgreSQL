@@ -1,5 +1,6 @@
 -- Active: 1709553243337@@127.0.0.1@5433@company_db@public
 CREATE database company_db;
+
 CREATE TABLE departments (
     department_id SERIAL PRIMARY KEY,
     department_name VARCHAR(50) NOT NULL
@@ -14,9 +15,6 @@ CREATE TABLE employees (
     salary NUMERIC(7, 2),
     status VARCHAR(50)
 );
-DROP TABLE employees;
-ALTER TABLE employees ALTER COLUMN status TYPE VARCHAR(50);
-SELECT * from employees;
 INSERT INTO departments (department_name) VALUES 
     ('Engineering'),
     ('Marketing'),
