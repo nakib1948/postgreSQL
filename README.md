@@ -58,17 +58,15 @@ FROM employees
 GROUP BY department_id;
 ```
 10. **How can you calculate aggregate functions like COUNT, SUM, and AVG in PostgreSQL?**
- -   You can calculate aggregate functions like COUNT, SUM, and AVG in PostgreSQL by using them in conjunction with the SELECT statement and the GROUP BY clause if necessary.
+  You can calculate aggregate functions like COUNT, SUM, and AVG in PostgreSQL by using them in conjunction with the SELECT statement and the GROUP BY clause if necessary.
      Example:
-
-    - Count the number of rows in a table
+```sql
 SELECT COUNT(*) FROM employees;
 
- Calculate the total salary of all employees
 SELECT SUM(salary) FROM employees;
 
-- Calculate the average age of employees in each department
 SELECT department_id, AVG(age) FROM employees GROUP BY department_id;
+```
 
 In these examples:
 
