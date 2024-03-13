@@ -21,25 +21,25 @@
 5. **Explain the purpose of the WHERE clause in a SELECT statement.**
  -  The purpose of the WHERE clause in a SELECT statement is to filter rows based on specified conditions.
  -  Example:
-   ```sql
+  
    SELECT * FROM employees WHERE department_id = 1;
  
 - In this example, the WHERE clause filters rows from the employees table where the department_id column equals 1, returning only employees who belong to the department with ID 1.
 6. **What are the LIMIT and OFFSET clauses used for?**
 - The LIMIT and OFFSET clauses are used in SQL queries to control the number of rows returned and to specify the starting point for retrieving rows, respectively. They are commonly used together for implementing pagination in SQL queries, where a subset of rows is retrieved for display or processing.
  Example:
-```sql
+
 SELECT * FROM employees ORDER BY employee_id LIMIT 10 OFFSET 20;
 - In this example, the query returns 10 rows from the employees table starting from the 21st row (skipping the first 20 rows), ordered by the employee_id column.
 7. **How can you perform data modification using UPDATE statement?**
 - The PostgreSQL UPDATE statement allows us to update data in one or more columns of one or more rows in a table. Here’s the basic syntax of the UPDATE statement:
-```sql
+
 UPDATE table_name
 SET column1 = value1,
     column2 = value2,
     ...
 WHERE condition;
-```
+
 8. **What is the significance of the JOIN operation, and how does it work in PostgreSQL?**
  -  The JOIN operation in PostgreSQL is significant as it allows you to combine rows from two or more tables based on a related column between them. It works by matching rows from different tables based on a specified condition, typically using primary and foreign key relationships.
    Example:
