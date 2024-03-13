@@ -19,17 +19,18 @@
    - Char is best used when you expect the data values in a column to be the same length. On the other hand, varchar is best used when you expect the data values in a column to be of variable length.
 
 5. **Explain the purpose of the WHERE clause in a SELECT statement.**
- -  The purpose of the WHERE clause in a SELECT statement is to filter rows based on specified conditions. Example:
+ -  The purpose of the WHERE clause in a SELECT statement is to filter rows based on specified conditions.
+ -  Example:
    ```sql
    SELECT * FROM employees WHERE department_id = 1;
  
-In this example, the WHERE clause filters rows from the employees table where the department_id column equals 1, returning only employees who belong to the department with ID 1.
+- In this example, the WHERE clause filters rows from the employees table where the department_id column equals 1, returning only employees who belong to the department with ID 1.
 6. **What are the LIMIT and OFFSET clauses used for?**
 - The LIMIT and OFFSET clauses are used in SQL queries to control the number of rows returned and to specify the starting point for retrieving rows, respectively. They are commonly used together for implementing pagination in SQL queries, where a subset of rows is retrieved for display or processing.
  Example:
 ```sql
 SELECT * FROM employees ORDER BY employee_id LIMIT 10 OFFSET 20;
-In this example, the query returns 10 rows from the employees table starting from the 21st row (skipping the first 20 rows), ordered by the employee_id column.
+- In this example, the query returns 10 rows from the employees table starting from the 21st row (skipping the first 20 rows), ordered by the employee_id column.
 7. **How can you perform data modification using UPDATE statement?**
 - The PostgreSQL UPDATE statement allows us to update data in one or more columns of one or more rows in a table. Here’s the basic syntax of the UPDATE statement:
 ```sql
